@@ -1,11 +1,11 @@
-.App {
+.Main{
   text-align: center;
   background-color: #222;
   color: white;
   height: 100vh;
 }
 
-.App-logo {
+.Home-logo {
   animation: App-logo-spin infinite 10s linear;
   height: 80px;
 }

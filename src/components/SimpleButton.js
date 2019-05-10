@@ -1,12 +1,30 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../App.css'
+import { Button } from 'react-materialize';
 
 const SimpleButton = () => {
-    console.log('Mensaje');
-
     return(
-        
+        <Button
+            node='a'
+            waves='light'
+            large
+            style={{marginRight: '5px'}}
+            onClick={showMessage}
+        >
+        Enviar
+        </Button>
+
+        /* <Button node='a' waves='light' large>
+        Button
+        <Icon right>
+        cloud
+        </Icon>
+        </Button> */
     );
 }
 
-export default Kitchen;
+const showMessage =  () => {
+    alert('Hola');
+}
+
+export default SimpleButton;
