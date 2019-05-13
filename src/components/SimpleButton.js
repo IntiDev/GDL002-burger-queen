@@ -2,6 +2,10 @@ import React from 'react';
 import '../App.css'
 import { Button } from 'react-materialize';
 
+const showMessage =  () => {
+    alert('Hola');
+}
+
 const SimpleButton = () => {
     return(
         <Button
@@ -23,8 +27,5 @@ const SimpleButton = () => {
     );
 }
 
-const showMessage =  () => {
-    alert('Hola');
-}
 
 export default SimpleButton;
