@@ -14,7 +14,7 @@ class Hosts extends Component {
     render() {
         return(
             <Fragment >
-                <Row>
+                <Row> 
                     <Col m={8} className='view-height'>
                         <Tabs className='tab-demo z-depth-1' options={{swipeable: true}}>
                             <Tab title='DESAYUNOS' className=''>

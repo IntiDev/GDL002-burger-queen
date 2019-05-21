@@ -10,7 +10,7 @@ const ViewMenu = () => {
             {
                 Menu.desayuno.bebidas.map(i => {
                     console.log(i.item + ": $" + i.precio);
-                 return <h2> i </h2>
+                 return <h2> {i.item} </h2>
                 })
              }
             {/* <h3> {Menu.desayuno.bebidas[0]} </h3> */}
