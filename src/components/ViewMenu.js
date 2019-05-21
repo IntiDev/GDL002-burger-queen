@@ -8,8 +8,9 @@ const ViewMenu = () => {
     return (
         <div>
             {
-                Menu.desayuno.bebidas.map((item) => {
-                 return <h2>item</h2>
+                Menu.desayuno.bebidas.map(i => {
+                    console.log(i.item + ": $" + i.precio);
+                 return <h2> i </h2>
                 })
              }
             {/* <h3> {Menu.desayuno.bebidas[0]} </h3> */}
