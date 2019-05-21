@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter,Switch,  Route} from 'react-router-dom';
 import Home from './components/Home';
 import Hosts from './components/Hosts';
 // import './App.css';
@@ -8,8 +8,10 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <Route to='/' component={Home}/>
-        <Route to='/Hosts' component={Hosts}/>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/hosts' component={Hosts}/>
+        </Switch>
       </BrowserRouter>
      
     );
