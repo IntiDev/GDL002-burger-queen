@@ -1,15 +1,16 @@
-import React, { Component, Fragment } from 'react';
-//import Home from './components/Home';
+import React, { Component} from 'react';
+import {BrowserRouter, Route} from 'react-router-dom';
+import Home from './components/Home';
 import Hosts from './components/Hosts';
 // import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <Fragment>
-        {/* <Home/> */}
-        <Hosts/>
-      </Fragment>
+      <BrowserRouter>
+        <Route to='/' component={Home}/>
+        <Route to='/Hosts' component={Hosts}/>
+      </BrowserRouter>
      
     );
   }
